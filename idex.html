@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Fill Bakery</title>
+    <link rel="icon" type="image/png" href="Assets\FAVICON.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-content">
+            <a href="#hero" class="logo">
+                <img src="Assets\cake-placeholder.png1" alt="Sweet Fill Logo">
+                <span>Sweet Fill</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Menu</a></li>
+                    <li><a href="#menu">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <a href="#" class="cart-icon">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+                <img src="Assets\cake_1.png1" alt="cake icon" class="floating-cake cake-left">
+                <img src="Assets\cake_2.png1" alt="cake icon" class="floating-cake cake-right">
+
+                <div class="hero-text">
+                    <h1>SWEET FILL</h1>
+                    <P>Cakes And Pasteries</P>
+                    <a href="#menu" class="btn-primary">ORDER NOW!</a>
+                </div>
+            </div>
+            <div class="wave-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section id="featured">
+            <div class="container">
+                <h2 class="section-title">Fresh from the Oven</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="Assets\cake-placeholder.png!" alt="Classic Berry Cake">
+                        <h3>Classic Berry Cake</h3>
+                        <p class="price">$15.00</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="Assets\cake-placeholder.png!" alt="Choco-Delight Cake">
+                        <h3>Choco-Delight Cake</h3>
+                        <p class="price">$20.00</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="Assets\cake-placeholder.png!" alt="Berry Bliss">
+                        <h3>Berry Bliss</h3>
+                        <p class="price">$18.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="cream-bg">
+            <div class="container">
+                <h2 class="section-title">Full Menu</h2>
+
+                <div class="menu-filters">
+                    <button type="button" class="filter-btn active" data-filter="all">All</button>
+                    <button type="button" class="filter-btn" data-filter="cakes">Cakes</button>
+                    <button type="button" class="filter-btn" data-filter="pastries">Pastries</button>
+                </div>
+
+                <div class="product-grid menu-grid">
+                    <div class="product-card" data-category="cakes">
+                        <img src="Assets\cake-placeholder.png!" alt="Cake 1">
+                        <h3>Vanilla Dream</h3>
+                        <p class="price">$18.00</p>
+                    </div>
+                    <div class="product-card" data-category="pastries">
+                        <img src="Assets\cake-placeholder.png!" alt="Pastry 1">
+                        <h3>Strawberry Tart</h3>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="product-card" data-category="cakes">
+                        <img src="Assets\cake-placeholder.png!" alt="Cake 2">
+                        <h3>Chocolate Fudge</h3>
+                        <p class="price">$25.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container about-content">
+                <div class="about-image">
+                    <img src="Assets\bakery-interior.png1" alt="About Us Illustration" style="border-radius: 50%; border: 5px solid var(--pink-dark);">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p>At Sweet Fill, we believe every bite should bring joy. We use only the finest organic ingredients and traditional family recipes to create treats that feel like a warm hug. Baking with love since 2023!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="cream-bg">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"The strawberry shortcake is to die for! It was the highlight of my party. Absolutely delicious!"</p>
+                        <span class="author">- Sarah J.</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Ordered a custom birthday cake and it was perfect. Not too sweet, just right. Highly recommend!"</p>
+                        <span class="author">- Mike T.</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Best pastries in town. The croissants are so flaky and buttery. My new favorite spot.</p>
+                        <span class="author">- Emily R.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col icon-list">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Mon-Fri: 9:00am - 8:00pm</li>
+                    <li>Sat-Sun: 10:00am - 6:00pm</li>
+                    <li>Sun: Closed</li>
+                </ul>
+            </div>
+            <div class="footer-col map-col">
+                <div class="map-placeholder">
+                    <h3>Our Location</h3>
+                    <p>123 Baker's Street, Sweet City, SC 12345</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Signup By Newsletter</h3>
+                <form class="newslette-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">➤</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#">IG</a>
+                    <a href="#">FB</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sweet Fill Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
