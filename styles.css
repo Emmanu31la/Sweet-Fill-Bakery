@@ -84,6 +84,8 @@ header {
 .logo img {
     display: flex;
     list-style: none;
+    width: 100%;
+    max-width: 50px;
 }
 
 .main-nav ul {
@@ -103,22 +105,34 @@ header {
 
 #hero {
     background-color: var(--pink-primary);
+    background-image: 
+        linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+        background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
     text-align: center;
-    padding: 100px 0;
+    padding: 140px 0 180px 0;
     color: var(--white);
     position: relative;
+    overflow: hidden;
 }
 
 #hero h1 {
     font-family: var(--font-heading);
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 1;
+    margin-bottom: 10px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+    text-shadow: 4px 4px 0px rgba(187, 17, 88, 0.349);
 }
 
 #hero p {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .wave-divider {
@@ -137,9 +151,129 @@ header {
     transform: rotateY(180deg);
 }
 
+.wave-divider svg path {
+    fill: var(--cream-bg);
+}
 .product-grid, .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     padding: 50px 0;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.floating-cake {
+    position: absolute;
+    width: 400px;
+    top: -30px;
+    animation: floatUp 4s ease-in-out infinite;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.cake-left {
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.cake-right {
+    right: 5%;
+    animation-delay: 1s;
+}
+
+.product-card {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(73, 1, 49, 0.288);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 107, 139, 0.25);
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 1800px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 5px 5px rgba(255, 39, 165, 0.5));
+}
+
+.product-card h3 {
+    font-family: var(--font-body); /* Clean font for names */
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    font-family: var(--font-heading);
+    color: var(--pink-primary);
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 0 rgba(255,255,255,0.4); /* Hard shadow for 3D effect */
+    transition: transform 0.1s;
+}
+
+.btn-primary:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--white);
+    color: var(--pink-primary);
+}
+
+.menu-filters {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--pink-primary);
+    color: var(--pink-primary);
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--pink-primary);
+    color: var(--white)
+}
+
+.product-card.hide {
+    display: none; /* Removes it from layout */
+}
+
+.product-card.show {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
 }
