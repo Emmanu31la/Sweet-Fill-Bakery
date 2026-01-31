@@ -85,7 +85,7 @@ header {
     display: flex;
     list-style: none;
     width: 100%;
-    max-width: 50px;
+    max-width: 60px;
 }
 
 .main-nav ul {
@@ -94,13 +94,13 @@ header {
 }
 
 .main-nav li {
-    margin-left: 20px; ;
+    margin-left: 30px;
 }
 
 .main-nav a {
     text-decoration: none;
     color: var(--white);
-    font-weight: 600;
+    font-weight: 800;
 }
 
 #hero {
@@ -358,3 +358,4 @@ header {
         display: none;
     }
 }
+
