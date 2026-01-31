@@ -277,3 +277,84 @@ header {
     0% { opacity: 0; transform: scale(0.9); }
     100% { opacity: 1; transform: scale(1); }
 }
+
+@media screen and (max-width: 768px) {
+    #hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .header-content {
+        padding: 0 20px;
+    }
+    
+    .about-content {
+        flex-direction: column; /* Stack image on top of text */
+        text-align: center;
+    }
+
+    .about-image img {
+        margin-bottom: 30px;
+        width: 80%;
+    }
+
+    .mobile-toggle {
+        display: block; /* Show the hamburger */
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--white);
+        margin-left: 15px;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start hidden off-screen to the right */
+        width: 70%; /* Cover 70% of the screen */
+        height: 100vh;
+        background-color: var(--pink-primary);
+        z-index: 2000;
+        transition: 0.4s ease; /* Smooth slide effect */
+        padding-top: 60px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    .main-nav.active {
+        right: 0;
+    }
+    .main-nav ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+    }
+    .main-nav li {
+        margin: 20px 0;
+    }
+    
+    .main-nav a {
+        font-size: 1.2rem; /* Bigger text for thumbs */
+    }
+    .mobile-close {
+        display: block; /* Show the X button */
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+    /* 4. Hero Adjustments */
+    .floating-cake {
+        width: 80px; /* Smaller floating cakes */
+        top: 80px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobile-toggle, .mobile-close {
+        display: none;
+    }
+}

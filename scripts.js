@@ -45,3 +45,26 @@ filterBtns.forEach((btn) => {
         });
     });
 });
+
+const mobileToggle = document.querySelector(".mobile-toggle");
+const mobileClose = document.querySelector(".mobile-close");
+const nav = document.querySelector(".main-nav");
+const navLinks = document.querySelectorAll(".nav-link");
+
+// 1. Open Menu
+mobileToggle.addEventListener("click", () => {
+    nav.classList.add("active");
+});
+
+// 2. Close Menu (Clicking X)
+mobileClose.addEventListener("click", () => {
+    nav.classList.remove("active");
+});
+
+// 3. Close Menu (Clicking a Link)
+// It's annoying if you click "Menu" and the drawer stays open covering the screen.
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+});
