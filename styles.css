@@ -558,7 +558,7 @@ footer {
     .star-top-right {
         display: none;
     }
-    star-bottom-left {
+    .star-bottom-left {
         width: 25px;
         left: 5%;
         top: 60%;
