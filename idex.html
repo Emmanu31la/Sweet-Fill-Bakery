@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Fill Bakery</title>
-    <link rel="icon" type="image/png" href="Assets\FAVICON.png">
+    <link rel="icon" type="image/png" href="Assets/FAVICON.png"> 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +14,10 @@
     <header id="main-header">
         <div class="container header-content">
             <a href="#hero" class="logo">
-                <img src="Assets\logo.svg" alt="Sweet Fill Logo">
+                <img src="Assets/logo.svg" alt="Sweet Fill Logo">
                 <span>Sweet Fill</span>
             </a>
+            
             <nav class="main-nav">
                 <div class="mobile-close">✖</div>
                 <ul>
@@ -30,6 +31,7 @@
 
             <div class="header-icons">
                 <a href="#" class="cart-icon">🛒</a>
+                <div class="mobile-toggle">☰</div>
             </div>
         </div>
     </header>
@@ -37,18 +39,25 @@
     <main>
         <section id="hero">
             <div class="container hero-content">
-                <img src="Assets\cake_1.png" alt="cake icon" class="floating-cake cake-left">
-                <img src="Assets\cake_2.png" alt="cake icon" class="floating-cake cake-right">
+                <img src="Assets/cake_1.png" alt="cake icon" class="floating-cake cake-left">
+                <img src="Assets/cake_2.png" alt="cake icon" class="floating-cake cake-right">
 
                 <div class="hero-text">
                     <h1>SWEET FILL</h1>
-                    <P>~Cakes And Pasteries~</P>
-                    <a href="#menu" class="btn-primary">ORDER NOW!</a>
+                    <p>~Cakes And Pastries~</p>
+                    <a href="#menu" class="btn btn-primary">ORDER NOW!</a>
                 </div>
             </div>
+            
             <div class="wave-divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+                    <path d="M0,60 
+                    q 25,-30 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 
+                    t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 
+                    t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 
+                    t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 
+                    V 120 H 0 Z" 
+                    fill="var(--cream-bg)"></path>
                 </svg>
             </div>
         </section>
@@ -88,17 +97,17 @@
 
                 <div class="product-grid menu-grid">
                     <div class="product-card" data-category="cakes">
-                        <img src="Assets\Vanilla Dream.png" alt="Cake 1">
+                        <img src="Assets/Vanilla Dream.png" alt="Cake 1">
                         <h3>Vanilla Dream</h3>
                         <p class="price">$18.00</p>
                     </div>
                     <div class="product-card" data-category="pastries">
-                        <img src="Assets\Strawberry Tart.png" alt="Pastry 1">
+                        <img src="Assets/Strawberry Tart.png" alt="Pastry 1">
                         <h3>Strawberry Tart</h3>
                         <p class="price">$5.00</p>
                     </div>
                     <div class="product-card" data-category="cakes">
-                        <img src="Assets\chocolate fudge.png" alt="Cake 2">
+                        <img src="Assets/chocolate fudge.png" alt="Cake 2">
                         <h3>Chocolate Fudge</h3>
                         <p class="price">$25.00</p>
                     </div>
@@ -109,7 +118,7 @@
         <section id="about">
             <div class="container about-content">
                 <div class="about-image">
-                    <img src="Assets\about image.png" alt="About Us Illustration" style="border-radius: 50%; border: 5px solid var(--pink-dark);">
+                    <img src="Assets/about image.png" alt="About Us Illustration">
                 </div>
                 <div class="about-text">
                     <h2 class="section-title">About Us</h2>
@@ -132,7 +141,7 @@
                         <span class="author">- Mike T.</span>
                     </div>
                     <div class="testimonial-card">
-                        <p>"Best pastries in town. The croissants are so flaky and buttery. My new favorite spot.</p>
+                        <p>"Best pastries in town. The croissants are so flaky and buttery. My new favorite spot."</p>
                         <span class="author">- Emily R.</span>
                     </div>
                 </div>
@@ -159,9 +168,9 @@
 
             <div class="footer-col">
                 <h3>Signup By Newsletter</h3>
-                <form class="newslette-form">
+                <form class="newsletter-form">
                     <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn-primary">➤</button>
+                    <button type="submit">➤</button>
                 </form>
                 <div class="social-icons">
                     <a href="#">IG</a>
