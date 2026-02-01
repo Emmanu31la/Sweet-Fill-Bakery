@@ -212,6 +212,38 @@ header {
     text-transform: uppercase;
 }
 
+.hero-star {
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+    pointer-events: none;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.1));
+    animation: twinkle 3s ease-in-out infinite;
+}
+.star-top-right {
+    width: 75px; /* Was 70px, now much smaller */
+    top: 25%;    
+    left: 72%;   
+    transform: rotate(15deg);
+}
+
+.star-bottom-left {
+    width: 40px; /* Medium size */
+    top: 55%;
+    left: 32%;
+    transform: rotate(-10deg);
+}
+.star-bottom-right {
+    width: 40px; /* Medium size */
+    top: 52%;
+    left: 65%;
+    transform: rotate(20deg);
+}
+@keyframes twinkle {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(5deg); }
+}
+
 /* Wave Divider */
 .wave-divider {
     position: absolute;
@@ -522,6 +554,20 @@ footer {
     .about-content { flex-direction: column; }
     .wave-divider svg { height: 50px; } /* Smaller wave on mobile */
     .floating-cake { width: 180px; top: 80px; }
+
+    .star-top-right {
+        display: none;
+    }
+    star-bottom-left {
+        width: 25px;
+        left: 5%;
+        top: 60%;
+    }
+    .star-bottom-right {
+        width: 25px;
+        left: 90%;
+        top: 50%;
+    }
 }
 
 @media screen and (min-width: 769px) {
