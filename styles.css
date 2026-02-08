@@ -573,3 +573,26 @@ footer {
 @media screen and (min-width: 769px) {
     .mobile-toggle, .mobile-close { display: none; }
 }
+
+/* ==============================================
+   FIX FOR "DESKTOP SITE" ON MOBILE & LAPTOPS
+   (Screens between 769px and 1200px)
+   ============================================== */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    
+    #hero h1 {
+        font-size: 4rem; /* Was 5rem */
+    }
+
+    .cake-left {
+        left: 2%; /* Was 5% - pushes it further left */
+    }
+
+    .cake-right {
+        right: 2%; 
+    }
+
+    .floating-cake {
+        width: 100px; /* Was 120px */
+    }
+}
