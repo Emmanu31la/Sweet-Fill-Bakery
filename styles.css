@@ -581,18 +581,25 @@ footer {
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     
     #hero h1 {
-        font-size: 4rem; /* Was 5rem */
+        font-size: 3.5rem; /* Was 5rem */
     }
 
     .cake-left {
-        left: 2%; /* Was 5% - pushes it further left */
+        left: 1%; /* Was 5% - pushes it further left */
     }
 
     .cake-right {
-        right: 2%; 
+        right: 1%; 
     }
 
     .floating-cake {
-        width: 100px; /* Was 120px */
+        width: 150px; /* Was 120px */
+        top: 160px;
+    }
+
+    .star-top-right {
+        top: 15%;  /* Move it up slightly */
+        left: 70%; /* Move it closer to text to avoid the cake */
+        width: 40px;
     }
 }
